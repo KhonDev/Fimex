@@ -1,0 +1,66 @@
+name: fimex
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.1.6
+  flutter_screenutil: ^5.5.3+2
+  flutter_svg: ^1.0.3
+  pinput: ^2.2.10
+
+  # Navigation
+  routemaster: ^1.0.0
+
+  # State managemant
+  provider: ^6.0.3
+
+  
+
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: "#F9F9F9"
+  fullscreen: true
+  android: true
+  ios: true
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/vectors/
+
+  fonts:
+    - family: SFProDisplay
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf
+          weight: 400
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Light.otf
+          weight: 300
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Thin.otf
+          weight: 100
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+
